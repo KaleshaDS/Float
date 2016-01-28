@@ -1,0 +1,32 @@
+div>div{
+	width:25%;
+	height:100px;
+	background-color: gray; /*caracteristicas de los hijos*/
+	float: right;
+}
+
+.padre{
+	width: 800px;
+    margin-top: 20px; /*no tiene altura por que toma la suma de los 3 bloques*/
+	border:2px solid purple;
+	}
+
+#amarillo{
+	background-color:yellow;
+}
+
+#azul{
+	background-color: blue;
+}
+
+#rojo{
+	background-color: red;
+}
+
+.clearfix:before,.clearfix:after{
+	content:" ";
+	display:table;
+}
+.clearfix:after{
+	clear: both;
+} /*le permite a #padre que recupere su tamaño cuando los demas estan flotantesy volver a evolverlos*/
